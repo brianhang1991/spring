@@ -2,7 +2,6 @@ package com.example.spring.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.spring.entity.User;
-import javax.annotation.Resource;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
