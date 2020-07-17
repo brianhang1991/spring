@@ -5,5 +5,9 @@ spring:
     password: root123
     driver-class-name: com.mysql.jdbc.Driver
 
+  cache:
+    jcache:
+      config: classpath:cache/ehcache.xml
+
 mybatis-plus:
   type-aliases-package: com.example.spring.entity

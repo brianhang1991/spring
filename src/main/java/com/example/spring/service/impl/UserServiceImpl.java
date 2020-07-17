@@ -4,6 +4,7 @@ import com.example.spring.entity.User;
 import com.example.spring.mapper.UserDao;
 import com.example.spring.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -18,6 +19,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
+	@Cacheable(cacheNames = "user", key = "id")
 	public User selectById(Integer id) {
 		return userDao.selectById(id);
 	}
