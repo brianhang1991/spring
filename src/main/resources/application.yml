@@ -20,11 +20,12 @@ spring:
 #    basic:
 #      enabled: true
 
+  cache:
+    jcache:
+      config: classpath:cache/ehcache.xml
+
 mybatis-plus:
   type-aliases-package: com.example.spring.entity
-
+  
 server:
   port: 8081
-
-
-
