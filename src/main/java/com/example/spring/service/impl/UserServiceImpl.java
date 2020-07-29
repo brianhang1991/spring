@@ -21,6 +21,9 @@ public class UserServiceImpl implements UserService {
 	@Override
 	@Cacheable(cacheNames = "user", key = "id")
 	public User selectById(Integer id) {
-		return userDao.selectById(id);
+		User user = new User();
+		user.setId(234);
+		user.setName("testhcy");
+		return user;
 	}
 }
