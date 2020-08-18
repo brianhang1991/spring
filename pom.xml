@@ -6,8 +6,8 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.2.0.RELEASE</version>
-    <relativePath/> <!-- lookup parent from repository -->
+    <version>2.3.1.RELEASE</version>
+    <relativePath/>
   </parent>
   <groupId>com.example</groupId>
   <artifactId>spring</artifactId>
@@ -17,22 +17,22 @@
 
   <properties>
     <java.version>1.8</java.version>
-<!--    <spring-cloud.version>Hoxton.SR5</spring-cloud.version>-->
+    <spring-cloud.version>Hoxton.SR5</spring-cloud.version>
   </properties>
 
-  <repositories>
-    <repository>
-      <id>alimaven</id>
-      <name>aliyun maven</name>
-      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
+<!--  <repositories>-->
+<!--    <repository>-->
+<!--      <id>alimaven</id>-->
+<!--      <name>aliyun maven</name>-->
+<!--      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
+<!--      <releases>-->
+<!--        <enabled>true</enabled>-->
+<!--      </releases>-->
+<!--      <snapshots>-->
+<!--        <enabled>true</enabled>-->
+<!--      </snapshots>-->
+<!--    </repository>-->
+<!--  </repositories>-->
 
   <dependencies>
 
@@ -80,67 +80,30 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-    <dependency>
-      <groupId>org.apache.kafka</groupId>
-      <artifactId>kafka-streams</artifactId>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.apache.kafka</groupId>-->
+<!--      <artifactId>kafka-streams</artifactId>-->
+<!--    </dependency>-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
-      <version>2.1.5.RELEASE</version>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>org.mybatis.spring.boot</groupId>-->
-<!--      <artifactId>mybatis-spring-boot-starter</artifactId>-->
-<!--      <version>2.1.3</version>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.springframework.cloud</groupId>-->
-<!--      <artifactId>spring-cloud-bus</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.springframework.cloud</groupId>-->
-<!--      <artifactId>spring-cloud-starter</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.springframework.cloud</groupId>-->
-<!--      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.springframework.cloud</groupId>-->
-<!--      <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.springframework.cloud</groupId>-->
-<!--      <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.springframework.cloud</groupId>-->
-<!--      <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.springframework.cloud</groupId>-->
-<!--      <artifactId>spring-cloud-stream-binder-kafka</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.springframework.cloud</groupId>-->
-<!--      <artifactId>spring-cloud-stream-binder-rabbit</artifactId>-->
-<!--    </dependency>-->
+    <dependency>
+      <groupId>org.mybatis.spring.boot</groupId>
+      <artifactId>mybatis-spring-boot-starter</artifactId>
+      <version>2.1.3</version>
+    </dependency>
 
+<!--    <dependency>-->
+<!--      <groupId>org.apache.kafka</groupId>-->
+<!--      <artifactId>kafka-clients</artifactId>-->
+<!--      <version>2.1.0</version>-->
+<!--    </dependency>-->
 <!--    <dependency>-->
 <!--      <groupId>org.springframework.kafka</groupId>-->
 <!--      <artifactId>spring-kafka</artifactId>-->
-<!--      <version>3.0.0.RELEASE</version>-->
+<!--      <version>2.3.1.RELEASE</version>-->
 <!--    </dependency>-->
-    <dependency>
-      <groupId>org.apache.kafka</groupId>
-      <artifactId>kafka-clients</artifactId>
-      <version>2.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.kafka</groupId>
-      <artifactId>spring-kafka</artifactId>
-    </dependency>
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -179,11 +142,11 @@
       <artifactId>spring-rabbit-test</artifactId>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.springframework.kafka</groupId>
-      <artifactId>spring-kafka-test</artifactId>
-      <scope>test</scope>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.springframework.kafka</groupId>-->
+<!--      <artifactId>spring-kafka-test</artifactId>-->
+<!--      <scope>test</scope>-->
+<!--    </dependency>-->
 <!--    <dependency>-->
 <!--      <groupId>org.springframework.security</groupId>-->
 <!--      <artifactId>spring-security-test</artifactId>-->
@@ -197,12 +160,12 @@
       <version>3.3.1.tmp</version>
     </dependency>
 
-<!--    <dependency>-->
-<!--      <groupId>org.springframework</groupId>-->
-<!--      <artifactId>spring-test</artifactId>-->
-<!--      <version>5.2.1.RELEASE</version>-->
-<!--      <scope>test</scope>-->
-<!--    </dependency>-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>5.2.1.RELEASE</version>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -237,36 +200,42 @@
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-consul-discovery</artifactId>
-      <version>2.2.0.RELEASE</version>
+      <version>2.1.1.RELEASE</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-commons -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-commons</artifactId>
-      <version>2.2.0.RELEASE</version>
+      <artifactId>spring-cloud-starter-consul-config</artifactId>
+      <version>2.1.1.RELEASE</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-context -->
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-context</artifactId>
-      <version>2.2.0.RELEASE</version>
-    </dependency>
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-commons &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.springframework.cloud</groupId>-->
+<!--      <artifactId>spring-cloud-common s</artifactId>-->
+<!--      <version>2.2.0.RELEASE</version>-->
+<!--    </dependency>-->
+
+<!--    &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-context &ndash;&gt;-->
+<!--    <dependency>-->
+<!--      <groupId>org.springframework.cloud</groupId>-->
+<!--      <artifactId>spring-cloud-context</artifactId>-->
+<!--      <version>2.2.0.RELEASE</version>-->
+<!--    </dependency>-->
 
 
   </dependencies>
 
   <dependencyManagement>
-<!--    <dependencies>-->
-<!--      <dependency>-->
-<!--        <groupId>org.springframework.cloud</groupId>-->
-<!--        <artifactId>spring-cloud-dependencies</artifactId>-->
-<!--        <version>${spring-cloud.version}</version>-->
-<!--        <type>pom</type>-->
-<!--        <scope>import</scope>-->
-<!--      </dependency>-->
-<!--    </dependencies>-->
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring-cloud.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
   </dependencyManagement>
 
   <build>
