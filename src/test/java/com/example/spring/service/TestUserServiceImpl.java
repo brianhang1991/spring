@@ -2,6 +2,7 @@ package com.example.spring.service;
 
 import com.example.spring.Application;
 import com.example.spring.entity.User;
+import com.sun.org.apache.bcel.internal.util.ClassLoader;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -29,5 +30,9 @@ public class TestUserServiceImpl {
 	@Test
 	public void testSelectById(){
 		log.info("name of user is = " + userService.selectById(1).getName());
+	}
+
+	public void test(){
+		ClassLoader
 	}
 }
