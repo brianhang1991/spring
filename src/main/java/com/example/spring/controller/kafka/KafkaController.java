@@ -14,19 +14,19 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Slf4j
 @RequestMapping(value = "/kafka")
 public class KafkaController {
-	private KafkaTemplate<Object,Object> kafkaTemplate;
-	@RequestMapping("/sendGet/{message}")
-	public String sendGet(@PathVariable String message){
-		kafkaTemplate.send("topic1","topic1:" + message);
-		kafkaTemplate.send("topic2","topic2:" + message);
-		return message;
-	}
-
-	@PostMapping("/send")
-	public String send(@RequestParam String message){
-		log.info("message = " + message);
-		kafkaTemplate.send("topic1","topic1:" + message);
-		kafkaTemplate.send("topic2","topic2:" + message);
-		return message;
-	}
+//	private KafkaTemplate<Object,Object> kafkaTemplate;
+//	@RequestMapping("/sendGet/{message}")
+//	public String sendGet(@PathVariable String message){
+//		kafkaTemplate.send("topic1","topic1:" + message);
+//		kafkaTemplate.send("topic2","topic2:" + message);
+//		return message;
+//	}
+//
+//	@PostMapping("/send")
+//	public String send(@RequestParam String message){
+//		log.info("message = " + message);
+//		kafkaTemplate.send("topic1","topic1:" + message);
+//		kafkaTemplate.send("topic2","topic2:" + message);
+//		return message;
+//	}
 }

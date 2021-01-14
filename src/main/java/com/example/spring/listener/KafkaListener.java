@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 public class KafkaListener {
-	@org.springframework.kafka.annotation.KafkaListener(topics = {"topic","topic01"})
-	public void sendListen(String message){
-		log.info("message :" + message);
-	}
+//	@org.springframework.kafka.annotation.KafkaListener(topics = {"topic","topic01"})
+//	public void sendListen(String message){
+//		log.info("message :" + message);
+//	}
 }
